@@ -6,7 +6,7 @@ export default () =>
     <h1>Hello World!</h1>
     <p>{ hello }</p>
     <ul>
-      <li><Link href="/avatar"><a>Avatar</a></Link></li>
+      <li><Link href="/profile"><a>Profile</a></Link></li>
       <li><Link href="/counter"><a>Counter</a></Link></li>
       <li><Link href="/todoapp"><a>Todoapp</a></Link></li>
       <li><Link href="/fetch"><a>Fetch</a></Link></li>

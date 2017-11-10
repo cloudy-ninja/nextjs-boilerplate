@@ -1,0 +1,81 @@
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+i {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+body{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+}
+.avatar {
+  position:relative;
+  margin-left: 20%;
+  width:50px;
+  height:50px;
+  outline: 0;
+}
+.avatar-name {
+  position: absolute;
+  left:-100%;
+  top: 14px;
+  text-align: right;
+}
+.avatar-name b {
+  display: block;
+}
+img{
+  /* position:absolute;
+  left:50%;
+  top:50%; */
+  /* transform:translate(-50%, -50%); */
+  width:48px;
+  border-radius:50%;
+  background-color: #ccc;
+}
+.progress {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  transform: rotate(-90deg);
+}
+.avatar-menu {
+  cursor: initial;
+  /*box-shadow: 0 0 4px rgba(200,200,200,.1);*/
+  position: absolute;
+  right: calc(-50% + 25px);
+  top: 60px;
+  border: 1px solid #ccc;
+  min-width: 272px;
+  min-height: 120px;
+  display: none;
+}
+.avatar:focus .avatar-menu {
+  display: block;
+}
+.avatar-menu:after, .avatar-menu:before {
+  bottom: 100%;
+  left: calc(90% + 4px);
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.avatar-menu:after {
+  border-bottom-color: white;
+  border-width: 6px;
+  margin-left: -6px;
+}
+.avatar-menu:before {
+  border-bottom-color: #ccc;
+  border-width: 7px;
+  margin-left: -7px;
+}
